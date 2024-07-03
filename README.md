@@ -1,6 +1,6 @@
 # BirthRegistry Explorer
 
-BirthRegistry Explorer is a streamlined WPF application for searching birth registration records, offering efficient data retrieval and management.
+BirthRegistry Explorer is a streamlined application for searching birth registration records, offering efficient data retrieval and management.
 
 ## System Requirements
 
