@@ -64,7 +64,7 @@
             margin: 20px 0;
             padding: 10px 20px;
             background-color: #4a90e2;
-            color: #000;
+            color: #fff;
             border-radius: 4px;
             text-decoration: none;
             font-size: 18px;
@@ -76,6 +76,60 @@
             width: 60px;
             height: 60px;
             margin-right: 10px;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slides img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .navigation-manual {
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+        .manual-btn {
+            border: 2px solid #4a90e2;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+        .manual-btn:not(:last-child) {
+            margin-right: 20px;
+        }
+        .manual-btn:hover {
+            background: #4a90e2;
+        }
+        .payment-methods {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .payment-methods img {
+            margin: 0 10px;
+            width: 50px;
+            height: 50px;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -90,6 +144,19 @@
         <h2>About BirthRegistry Explorer</h2>
         <p>BirthRegistry Explorer একটি শক্তিশালী এবং ব্যবহারকারী-বান্ধব অ্যাপ্লিকেশন যা জন্ম নিবন্ধন রেকর্ড অনুসন্ধান এবং পরিচালনার প্রক্রিয়াকে সহজ করার জন্য ডিজাইন করা হয়েছে। একটি স্বজ্ঞাত ইন্টারফেস এবং শক্তিশালী বৈশিষ্ট্য সহ, এটি ব্যবহারকারীদের জন্য গুরুত্বপূর্ণ জন্ম তথ্য দক্ষতার সাথে অ্যাক্সেস করার জন্য একটি নিরবচ্ছিন্ন অভিজ্ঞতা প্রদান করে৷</p> 
         
+        <div class="slider">
+            <div class="slides">
+                <img src="screenshot1.png" alt="Screenshot 1">
+                <img src="screenshot2.png" alt="Screenshot 2">
+                <img src="screenshot3.png" alt="Screenshot 3">
+            </div>
+            <div class="navigation-manual">
+                <div class="manual-btn" onclick="manualSlide(1)"></div>
+                <div class="manual-btn" onclick="manualSlide(2)"></div>
+                <div class="manual-btn" onclick="manualSlide(3)"></div>
+            </div>
+        </div>
+
         <h2>System Requirements</h2>
         <ul>
             <li><b>Minimum OS Version:</b> Windows 10, version 1809 (Redstone 5), Build 17763 (October 2018 Update)</li>
@@ -164,9 +231,6 @@
             </tbody>
         </table>
 
-        <h2>Installation</h2>
-        <p>To install BirthRegistry Explorer, download the latest release from the <a href="https://github.com/rumanprodhan/bdris/releases/latest">releases page</a> and run the installer. The installer will guide you through the installation process.</p>
-
         <h2>Subscription Information</h2>
         <table>
             <thead>
@@ -191,6 +255,12 @@
                     <td>Bikash, Rocket</td>
                 </tr>
                 <tr>
+                    <td>Annual</td>
+                    <td>৳1440</td>
+                    <td>1 year</td>
+                    <td>Bikash, Rocket</td>
+                </tr>
+                <tr>
                     <td>Manual Payment</td>
                     <td>Custom</td>
                     <td>Custom</td>
@@ -198,13 +268,37 @@
                 </tr>
             </tbody>
         </table>
+        <div class="payment-methods">
+            <img src="bikash_logo.png" alt="Bikash">
+            <img src="rocket_logo.png" alt="Rocket">
+        </div>
+
+        <h2>Installation</h2>
+        <p>To install BirthRegistry Explorer, download the latest release from the <a href="https://github.com/rumanprodhan/bdris/releases/latest">releases page</a> and run the installer. The installer will guide you through the installation process.</p>
 
         <h2>Contact</h2>
-        <p>For questions or feedback, please open an issue on the <a href="https://github.com/rumanprodhan/bdris/issues">GitHub repository</a> or reach out to us via email at <a href="mailto:ruman.prodhan@gmail.com">support@birthregistryexplorer.com</a> or call us at <strong>+880-172-4587472</strong>. For WhatsApp, you can contact us at <strong>+880-171-7786877</strong> or <strong>+880-172-4588472</strong>.</p>
+        <div class="contact-info">
+            <p>For questions or feedback, please open an issue on the <a href="https://github.com/rumanprodhan/bdris/issues">GitHub repository</a>.</p>
+            <p>Email us at <a href="mailto:ruman.prodhan@gmail.com">support@birthregistryexplorer.com</a></p>
+            <p>Contact us on WhatsApp only:</p>
+            <p><strong>+880-172-4587472</strong></p>
+            <p><strong>+880-171-7786877</strong></p>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2024 BirthRegistry Explorer. All rights reserved.</p>
     </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
+
+        function manualSlide(index) {
+            slides.style.transform = `translateX(${-index * 100}%)`;
+            currentSlide = index;
+        }
+    </script>
 </body>
 </html>
