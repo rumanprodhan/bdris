@@ -1,13 +1,16 @@
 <div align="center">
 
 # BirthRegistry Explorer
-</div>
-![BirthRegistry Explorer Logo](https://github.com/rumanprodhan/bdris/raw/main/icon.png) <!-- Replace with actual path to your logo -->
+
+![BirthRegistry Explorer Logo](https://github.com/rumanprodhan/bdris/raw/main/logo.png) <!-- Replace with actual path to your logo -->
 
 **[Download BirthRegistry Explorer](https://github.com/rumanprodhan/bdris/releases/latest)**
 
 _BirthRegistry Explorer is a streamlined application for searching birth registration records, offering efficient data retrieval and management._
 
+[Visit our GitHub Pages site for detailed documentation](https://rumanprodhan.github.io/bdris/)
+
+</div>
 
 
 ---
