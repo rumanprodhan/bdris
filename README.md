@@ -2,7 +2,7 @@
 
 # BirthRegistry Explorer
 
-![BirthRegistry Explorer Logo](https://github.com/rumanprodhan/bdris/raw/main/logo.png) <!-- Replace with actual path to your logo -->
+![BirthRegistry Explorer Logo](https://github.com/rumanprodhan/bdris/raw/main/icon.png) <!-- Replace with actual path to your logo -->
 
 **[Download BirthRegistry Explorer](https://github.com/rumanprodhan/bdris/releases/latest)**
 
