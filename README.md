@@ -1,6 +1,12 @@
 # BirthRegistry Explorer
 
+![BirthRegistry Explorer Logo](https://github.com/rumanprodhan/bdris/blob/main/icon.png) <!-- Replace with actual path to your logo -->
+
+**[Download BirthRegistry Explorer](https://github.com/rumanprodhan/bdris/releases/latest)**
+
 BirthRegistry Explorer is a streamlined application for searching birth registration records, offering efficient data retrieval and management.
+
+---
 
 ## System Requirements
 
@@ -25,8 +31,16 @@ This application supports the following versions of Windows 10:
 
 ## Installation
 
-To install BirthRegistry Explorer, download the latest release from the [releases page](https://github.com/rumanprodhan/bdris/releases) and run the installer. The installer will guide you through the installation process.
+To install BirthRegistry Explorer, download the latest release from the [releases page](https://github.com/rumanprodhan/bdris/releases/latest) and run the installer. The installer will guide you through the installation process.
+
+---
 
 ## Contact
 
 For questions or feedback, please open an issue on the [GitHub repository](https://github.com/rumanprodhan/bdris/issues).
+
+---
+
+<footer>
+    &copy; 2024 BirthRegistry Explorer. All rights reserved.
+</footer>
